@@ -20,7 +20,6 @@ export default function Page({ name, data }) {
     return <div>Loading...</div>;
   }
 
-  console.log(data);
   return canAccessPage ? (
     <div>
       <div>name: {name}</div>
@@ -29,7 +28,7 @@ export default function Page({ name, data }) {
       <p>{time}</p>
     </div>
   ) : (
-    <div>you can't access this page</div>
+    <div>you cant access this page</div>
   );
 }
 
